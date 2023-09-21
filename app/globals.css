@@ -26,3 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+a {
+  @apply hover:text-violet-800 text-2xl
+}
+
+a.active {
+  @apply text-emerald-300
+}

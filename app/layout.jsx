@@ -1,5 +1,6 @@
 import './globals.css'
 import {Rubik} from 'next/font/google'
+import Navigation from "@/app/components/Navigation";
 
 const rubik = Rubik({subsets: ['latin']})
 
@@ -14,6 +15,8 @@ export default function RootLayout({children}) {
         <body className={rubik.className}>
             <div className="h-screen text-white pt-20 pl-20 pr-20">
                 <div className="bg-gray-800 h-full items-center flex flex-col rounded-t-3xl p-20">
+                    <h1 className="text-4xl">Marina Savelieva CV</h1>
+                    <Navigation/>
                     {children}
                 </div>
             </div>
