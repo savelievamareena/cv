@@ -5,33 +5,30 @@ import {usePathname} from "next/navigation"
 
 export default function Navigation() {
     let pathName = usePathname();
-    return(
-        <nav className="min-w-full flex flex-row justify-evenly my-5 border-b-2 border-pink-400 py-2">
-            <div>
-                <Link href="/"
-                      className={`text-pink-600 ${pathName === "/" ? "active" : null }`}>
-                    About
-                </Link>
-            </div>
-            <div>
-                <Link href="cv"
-                      className={`text-pink-500 ${pathName === "/cv" ? "active" : null }`}>
-                    CV
-                </Link>
-            </div>
-            <div>
-                <Link href="projects"
-                      className={`text-pink-400 ${pathName === "/projects" ? "active" : null }`}>
-                    Projects
-                </Link>
-            </div>
-            <div>
+    let paths = [
+        ["/", "About", "text-pink-700"],
+        ["/cv", "CV", "text-pink-600"],
+        ["/projects", "Projects", "text-pink-500"],
+        ["/links", "Links", "text-pink-400"],
+        ["/skills", "Skills", "text-pink-300"],
+    ]
+
+    let links = paths.map((linkPath, i) => {
+        return(
+            <div key={i}>
                 <Link
-                    href="links"
-                    className={`text-pink-300 ${pathName === "/links" ? "active" : null }`}>
-                    External Links
+                    href={linkPath[0]}
+                    className={`${linkPath[2]} ${pathName === paths[i][0] && "active"}`}
+                >
+                    {linkPath[1]}
                 </Link>
             </div>
+        )
+    })
+
+    return(
+        <nav className={`min-w-full flex flex-row justify-evenly my-5 border-b-2 border-pink-400 py-2`}>
+            {links}
         </nav>
     )
 }
