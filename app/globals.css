@@ -27,9 +27,9 @@ body {
 }
 
 a {
-  @apply hover:text-emerald-300 text-2xl
+  @apply hover:text-mint-green text-2xl
 }
 
 a.active {
-  @apply text-emerald-500
+  @apply text-mint-green
 }

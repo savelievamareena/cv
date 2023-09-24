@@ -1,13 +1,10 @@
+import ProjectsList from "@/app/projects/ProjectsList";
+
 export default function Projects() {
     return(
-        <main>
-            <ul>
-                <h2>A list of my projects</h2>
-                <li>first</li>
-                <li>second</li>
-                <li>third</li>
-                <li>fourth</li>
-            </ul>
+        <main className="w-70 mx-auto">
+            <h2 className="text-4xl my-3 pb-5">A list of my projects</h2>
+            <ProjectsList/>
         </main>
     )
 }

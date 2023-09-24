@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "EdBacker",
+      "description": "Fundraising web-application for schools. Technologies used: JS (JQuery), PHP (Yii), MySQL. In this project, I played a key role in front-end and back-end development. I used JS and JQuery for front-end interactivity and PHP Yii for back-end development. Integration with PayPal API for payment processing was also part of my responsibilities."
+    },
+    {
+      "id": 2,
+      "title": "Diploma",
+      "description": "Web application for interaction with patients of a medical facility. Technologies used: Java, React, MySQL, Spring framework. As a web developer, I was responsible for implementing the front-end using React, designing user interfaces, and integrating them with the back-end services built with Java and Spring framework. I also worked on database integration using MySQL."
+    },
+    {
+      "id": 3,
+      "title": "CV",
+      "description": "Personal CV website built with NextJS and Tailwind. As a web developer, I created my own CV website using NextJS, a React framework, and Tailwind for styling. I designed and developed the entire website, including the layout, responsive design, and content management."
+    }
+  ]
+}
