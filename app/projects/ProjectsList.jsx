@@ -12,8 +12,8 @@ export default async function ProjectsList() {
     let projectsComponents = projects.map(project => {
         return(
             <div key={project.id} className="flex justify-evenly flex-row mb-10 pb-5 border-b border-mint-green">
-                <div className="text-2xl w-32 flex-shrink-0">{project.title}</div>
-                <div className="text-xl flex-1">{project.description}</div>
+                <div className="text-2xl w-36 shrink-0">{project.title}</div>
+                <div className="text-xl shrink text-justify">{project.description}</div>
             </div>
         )
     })

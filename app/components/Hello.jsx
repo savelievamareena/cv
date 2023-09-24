@@ -13,7 +13,10 @@ export default function Hello() {
                 growing familiarity with back-end frameworks using PHP, Java, and SQL. <br/> My freelancing journey has
                 equipped me with a unique blend of problem-solving skills, adaptability, and a keen eye for design. As
                 someone who thrives on learning and improving, I am eager to contribute my skills in a team-oriented,
-                professional setting, while continuously advancing my understanding of modern web development practices.
+                professional setting, while continuously advancing my understanding of modern web development practices.<br/>
+                I have also attended the IBA Institute and completed a 2-year educational program for retraining managers and
+                specialists with higher education. My specialization was 'Software Design for Information Systems.' I
+                was graduated with a specialization 'Programmer'.
             </div>
         </div>
     )
