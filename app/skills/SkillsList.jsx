@@ -9,6 +9,7 @@ export default function SkillsList() {
         { skill: "Java", level: "Familiar" },
         { skill: "PHP", level: "Familiar" },
         { skill: "MySQL", level: "Expert" },
+        { skill: "Git", level: "Proficient" },
     ];
 
     return(
