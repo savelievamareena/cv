@@ -1,33 +1,73 @@
-async function getProjects() {
-    let data = await fetch("http://localhost:4000/projects", {
-        next: {
-            revalidate: 100
-        }
-    });
-    return data.json();
-}
+'use client'
+import React from "react";
+import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
 
-export default async function ProjectsList() {
-    let projects = await getProjects();
-    let projectsComponents = projects.map(project => {
-        return(
-            <div key={project.id} className="flex justify-evenly flex-row mb-10 pb-5 border-b border-mint-green">
-                <div className="text-2xl w-64 shrink-0 mr-2">{project.title}</div>
-                <div className="text-xl shrink text-justify mr-10">{project.description}</div>
+export default function ProjectsList() {
+    const [pData, setPData] = React.useState([]);
+    const [loading, setLoading] = React.useState(true);
+    const [activeProjectIndex, setActiveProjectIndex] = React.useState(0);
+    const [activeProject, setActiveProject] = React.useState({});
+
+    React.useEffect(()=> {
+        fetch('http://localhost:4000/projects')
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data)
+                setPData([...data]);
+                setLoading(false);
+            }).catch(error => {
+                console.log(error)
+            })
+    }, []);
+
+    React.useEffect(()=> {
+        if(pData.length > 0) {
+            setActiveProject({...pData[activeProjectIndex]});
+        }
+    }, [pData]);
+
+    React.useEffect(()=> {
+        setActiveProject({...pData[activeProjectIndex]});
+    }, [activeProjectIndex]);
+
+    function projectsFlipNext() {
+        console.log(activeProjectIndex)
+        if(activeProjectIndex === pData.length - 1) {
+            setActiveProjectIndex(0);
+        }else {
+            setActiveProjectIndex(activeProjectIndex + 1);
+        }
+    }
+
+    function projectsFlipPrev() {
+        console.log(activeProjectIndex)
+        if(activeProjectIndex === 0) {
+            setActiveProjectIndex(pData.length - 1);
+        }else {
+            setActiveProjectIndex(activeProjectIndex - 1);
+        }
+    }
+
+    if (loading) return <p>Loading...</p>
+    if (!pData) return <p>No profile data</p>
+
+    return(
+        <div className="flex flex-col flex-grow h-full">
+            <div key={activeProject.id} className="flex justify-evenly flex-row">
+                <div className="text-2xl w-64 shrink-0">{activeProject.title}</div>
+                <div className="text-xl shrink text-justify">{activeProject.description}</div>
                 <div className="text-xl shrink-0 w-64 text-right">
-                    {project.technologies.map(technologie => {
+                    {activeProject.technologies?.map((technology, i) => {
                         return(
-                            <div>{technologie}</div>
+                            <div key={i}>{technology}</div>
                         )
                     })}
                 </div>
             </div>
-        )
-    })
-
-    return(
-        <>
-            {projectsComponents}
-        </>
+            <div className="flex flex-row space-x-10 text-4xl place-content-center mt-auto mb-10">
+                <BsArrowLeftCircle className="cursor-pointer" onClick={projectsFlipPrev} />
+                <BsArrowRightCircle className="cursor-pointer" onClick={projectsFlipNext} />
+            </div>
+        </div>
     )
 }
