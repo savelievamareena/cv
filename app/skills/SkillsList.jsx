@@ -13,7 +13,7 @@ export default function SkillsList() {
     ];
 
     return(
-        <div className="flex flex-col text-xl">
+        <div className="flex flex-col text-xl pt-10">
             <div className="flex">
                 <div className="w-36 flex-shrink-0 p-2"></div>
                 {skillsLevels.map((level, index) => (

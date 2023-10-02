@@ -48,15 +48,15 @@ export default function ProjectsList() {
         }
     }
 
-    if (loading) return <p>Loading...</p>
-    if (!pData) return <p>No profile data</p>
+    if (loading) return <p className="pt-10">Loading...</p>
+    if (!pData) return <p className="pt-10">No profile data</p>
 
     return(
-        <div className="flex flex-col flex-grow h-full">
+        <div className="flex flex-col h-full pt-10">
             <div key={activeProject.id} className="flex justify-evenly flex-row">
-                <div className="text-2xl w-64 shrink-0">{activeProject.title}</div>
+                <div className="text-2xl w-64 shrink-0 pr-4">{activeProject.title}</div>
                 <div className="text-xl shrink text-justify">{activeProject.description}</div>
-                <div className="text-xl shrink-0 w-64 text-right">
+                <div className="text-xl shrink-0 w-64 text-right pl-4">
                     {activeProject.technologies?.map((technology, i) => {
                         return(
                             <div key={i}>{technology}</div>
@@ -64,7 +64,7 @@ export default function ProjectsList() {
                     })}
                 </div>
             </div>
-            <div className="flex flex-row space-x-10 text-4xl place-content-center mt-auto mb-10">
+            <div className="flex flex-row space-x-10 text-4xl place-content-center mt-auto mb-20">
                 <BsArrowLeftCircle className="cursor-pointer" onClick={projectsFlipPrev} />
                 <BsArrowRightCircle className="cursor-pointer" onClick={projectsFlipNext} />
             </div>

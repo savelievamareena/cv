@@ -27,7 +27,7 @@ export default function Navigation() {
     })
 
     return(
-        <nav className={`min-w-full flex flex-row justify-evenly my-5 border-b-2 border-coral-pink py-2`}>
+        <nav className={`min-w-full flex flex-row justify-evenly border-b-2 border-coral-pink py-2 mb-10`}>
             {links}
         </nav>
     )
