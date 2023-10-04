@@ -12,7 +12,6 @@ export default function ProjectsList() {
         fetch('http://localhost:4000/projects')
             .then((res) => res.json())
             .then((data) => {
-                console.log(data)
                 setPData([...data]);
                 setLoading(false);
             }).catch(error => {
@@ -40,7 +39,6 @@ export default function ProjectsList() {
     }
 
     function projectsFlipPrev() {
-        console.log(activeProjectIndex)
         if(activeProjectIndex === 0) {
             setActiveProjectIndex(pData.length - 1);
         }else {

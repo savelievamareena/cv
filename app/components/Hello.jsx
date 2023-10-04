@@ -15,8 +15,8 @@ export default function Hello() {
                 someone who thrives on learning and improving, I am eager to contribute my skills in a team-oriented,
                 professional setting, while continuously advancing my understanding of modern web development practices.<br/>
                 I have also attended the IBA Institute and completed a 2-year educational program for retraining managers and
-                specialists with higher education. My specialization was 'Software Design for Information Systems.' I
-                was graduated with a specialization 'Programmer'.
+                specialists with higher education. My specialization was &quot;Software Design for Information Systems.&quot; I
+                was graduated with a specialization &quot;Programmer&quot;.
             </div>
         </div>
     )

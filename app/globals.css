@@ -33,3 +33,11 @@ a {
 a.active {
   @apply text-mint-green
 }
+
+input, textarea {
+  @apply max-w-full
+}
+
+label {
+  @apply w-1/3 text-2xl text-left
+}

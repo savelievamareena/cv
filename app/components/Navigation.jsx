@@ -7,10 +7,10 @@ export default function Navigation() {
     let pathName = usePathname();
     let paths = [
         ["/", "About"],
-        ["/cv", "CV"],
         ["/projects", "Projects"],
         ["/skills", "Skills"],
         ["/links", "Links"],
+        ["/contact", "Contact Me"],
     ]
 
     let links = paths.map((linkPath, i) => {
