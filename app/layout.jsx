@@ -13,9 +13,9 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body className={rubik.className}>
-            <div className="text-white pt-10 pl-20 pr-20 h-screen">
-                <div className="bg-gray-800 items-center flex flex-col rounded-t-3xl p-10 h-full">
-                    <h1 className="text-4xl p-5">Marina Savelieva CV</h1>
+            <div className="text-white pl-20 pr-20 flex flex-col min-h-screen pt-10">
+                <div className="bg-gray-800 items-center flex flex-col rounded-t-3xl p-10 flex-1">
+                    <h1 className="text-4xl p-2">Marina Savelieva CV</h1>
                     <Navigation/>
                     {children}
                 </div>

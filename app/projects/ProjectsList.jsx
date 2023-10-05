@@ -50,7 +50,7 @@ export default function ProjectsList() {
     if (!pData) return <p className="pt-10">No profile data</p>
 
     return(
-        <div className="flex flex-col h-full pt-10">
+        <div className="flex flex-col pt-10 justify-between flex-1">
             <div key={activeProject.id} className="flex justify-evenly flex-row">
                 <div className="text-2xl w-64 shrink-0 pr-4">{activeProject.title}</div>
                 <div className="text-xl shrink text-justify">{activeProject.description}</div>
@@ -62,7 +62,7 @@ export default function ProjectsList() {
                     })}
                 </div>
             </div>
-            <div className="flex flex-row space-x-10 text-4xl place-content-center mt-auto mb-20">
+            <div className="flex flex-row space-x-10 text-4xl place-content-center">
                 <BsArrowLeftCircle className="cursor-pointer" onClick={projectsFlipPrev} />
                 <BsArrowRightCircle className="cursor-pointer" onClick={projectsFlipNext} />
             </div>
