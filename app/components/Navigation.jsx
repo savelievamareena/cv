@@ -18,7 +18,7 @@ export default function Navigation() {
             <div key={i}>
                 <Link
                     href={linkPath[0]}
-                    className={`text-coral-pink ${pathName === paths[i][0] && "active"}`}
+                    className={`text-coral-pink ${pathName === paths[i][0] && "active"} 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm`}
                 >
                     {linkPath[1]}
                 </Link>
@@ -27,7 +27,7 @@ export default function Navigation() {
     })
 
     return(
-        <nav className={`min-w-full flex flex-row justify-evenly border-b-2 border-coral-pink py-2 mb-10`}>
+        <nav className="min-w-full flex flex-row justify-evenly border-b-2 border-coral-pink py-2 mb-10">
             {links}
         </nav>
     )

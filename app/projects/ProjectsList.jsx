@@ -30,7 +30,6 @@ export default function ProjectsList() {
     }, [activeProjectIndex]);
 
     function projectsFlipNext() {
-        console.log(activeProjectIndex)
         if(activeProjectIndex === pData.length - 1) {
             setActiveProjectIndex(0);
         }else {
@@ -52,9 +51,9 @@ export default function ProjectsList() {
     return(
         <div className="flex flex-col pt-10 justify-between flex-1">
             <div key={activeProject.id} className="flex justify-evenly flex-row">
-                <div className="text-2xl w-64 shrink-0 pr-4">{activeProject.title}</div>
-                <div className="text-xl shrink text-justify">{activeProject.description}</div>
-                <div className="text-xl shrink-0 w-64 text-right pl-4">
+                <div className="responsive-pr-column1">{activeProject.title}</div>
+                <div className="responsive-pr-column2">{activeProject.description}</div>
+                <div className="responsive-pr-column3">
                     {activeProject.technologies?.map((technology, i) => {
                         return(
                             <div key={i}>{technology}</div>
@@ -62,7 +61,7 @@ export default function ProjectsList() {
                     })}
                 </div>
             </div>
-            <div className="flex flex-row space-x-10 text-4xl place-content-center">
+            <div className="flex flex-row space-x-10 text-4xl place-content-center mt-10">
                 <BsArrowLeftCircle className="cursor-pointer" onClick={projectsFlipPrev} />
                 <BsArrowRightCircle className="cursor-pointer" onClick={projectsFlipNext} />
             </div>
