@@ -45,11 +45,11 @@ export default function ProjectsList() {
         }
     }
 
-    if (loading) return <p className="pt-10">Loading...</p>
-    if (!pData) return <p className="pt-10">No profile data</p>
+    if (loading) return <p>Loading...</p>
+    if (!pData) return <p>No profile data</p>
 
     return(
-        <div className="flex flex-col pt-10 justify-between flex-1">
+        <div className="flex flex-col justify-between flex-1">
             <div key={activeProject.id} className="flex justify-evenly flex-row">
                 <div className="responsive-pr-column1">{activeProject.title}</div>
                 <div className="responsive-pr-column2">{activeProject.description}</div>

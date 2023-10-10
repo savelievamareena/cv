@@ -20,7 +20,7 @@ export default function Links() {
     })
 
     return(
-        <div className="m-5">
+        <div>
             {linksComponents}
         </div>
     )
