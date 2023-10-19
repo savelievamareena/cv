@@ -23,8 +23,8 @@
     },
     {
       "id": 3,
-      "title": "Personal CV",
-      "description": "Personal CV website built with NextJS and Tailwind. As a web developer, I created my own CV website using NextJS, a React framework, and Tailwind for styling. I designed and developed the entire website, including the layout, responsive design, and content management.",
+      "title": "Personal CV Website",
+      "description": "Personal CV Website Developed with Next.js and Tailwind CSS: As a web developer, I crafted my own CV website utilizing Next.js (a React framework) and Tailwind CSS for a sleek and modern styling. Meticulous effort was invested to ensure a responsive layout that is compatible not only with various web browser dimensions, but also with different mobile device resolutions. I employed JSON Server (a Node module) as a swift and uncomplicated solution to create a quick REST web service.",
       "technologies": [
         "JavaScript (React, Next.js)",
         "Tailwind"
@@ -53,18 +53,6 @@
       "email": "persempre1@yandex.ru",
       "text": "jljkljkljl",
       "id": 2
-    },
-    {
-      "name": "cbcvbcvb",
-      "email": "cbcvbcbcvb",
-      "text": "cbcbcbcb",
-      "id": 3
-    },
-    {
-      "name": "22222",
-      "email": "222222",
-      "text": "2222222",
-      "id": 4
     }
   ]
 }
