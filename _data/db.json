@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "Fundraising Web-Application for American School",
+      "title": "Fundraising Web-Application for Schools",
       "description": "In this project I played a key role in front-end and back-end development. Features implemented: weakly reports on donations, integration with PayPal API including recurring payments, several types of users functionality (principals, teachers, admins, bookkeepers, parents, students), scheduled emails within 6 timezones, cron jobs for weekly newsletters.",
       "technologies": [
         "PHP 5 (Yii)",
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "title": "Healthcare Patient Interaction and Scheduling Platform",
-      "description": "Engineered a robust Patient Interaction Platform tailored for a medical clinic. Features implemented: functionality for three types of users (quest, admin and patient), reviews, callback requests, possibility to make an appointment and to delete it for patients, personal cabinet for admins with the access to reviews moderation and so on.",
+      "description": "Engineered a robust Patient Interaction Platform tailored for a medical clinic. Features implemented: functionality for three types of users (quest, admin and patient), reviews, callback requests, possibility to make an appointment and to delete it for patients, personal cabinet for admins with the access to reviews moderation, an algorithm that calculates the proper time slots of the appointments to be displayed on the patient's page.",
       "technologies": [
         "Java (SpringBoot, Hibernate)",
         "JavaScript (React)",
@@ -24,16 +24,17 @@
     {
       "id": 3,
       "title": "Personal CV Website",
-      "description": "Personal CV Website Developed with Next.js and Tailwind CSS: As a web developer, I crafted my own CV website utilizing Next.js (a React framework) and Tailwind CSS for a sleek and modern styling. Meticulous effort was invested to ensure a responsive layout that is compatible not only with various web browser dimensions, but also with different mobile device resolutions. I employed JSON Server (a Node module) as a swift and uncomplicated solution to create a quick REST web service.",
+      "description": "Personal CV Website Developed with Next.js and Tailwind CSS: As a web developer, I crafted my own CV website utilizing Next.js (a React framework) and Tailwind CSS for a sleek and modern styling. Meticulous effort was invested to ensure a responsive layout that is compatible not only with various web browser dimensions, but also with different mobile device resolutions. I employed JSON Server (a Node module) as a swift and uncomplicated solution to create a quick REST web service. I set up a server for hosting my CV on Amazon AWS using Terraform for infrastructure automation.",
       "technologies": [
         "JavaScript (React, Next.js)",
-        "Tailwind"
+        "Tailwind",
+        "Terraform"
       ]
     },
     {
       "id": 4,
       "title": "Real-Time Multiplayer Tic-Tac-Toe Game",
-      "description": "Implemented a real-time multiplayer Tic-Tac-Toe game enabling two players to interact and play the game seamlessly on the web. Utilized React.js for building a user-friendly and responsive front-end interface. Incorporated the use of React hooks to manage the state and lifecycle of the game, ensuring a real-time gaming experience. The back-end, written in Node.js, handles player moves, game state, and user sessions, providing robust and efficient game management. Utilized WebSockets for real-time bidirectional event-based communication, ensuring immediate updates and synchronization between players. Integrated a simplistic yet effective error handling mechanism to manage game exceptions and provide a smooth user experience. The modular design of the project allows for easy updates and maintenance, demonstrating a good understanding of software design principles.",
+      "description": "Implemented a real-time multiplayer Tic-Tac-Toe game enabling two players to interact and play the game seamlessly on the web. Utilized React.js for building a user-friendly and responsive front-end interface. Incorporated the use of React hooks to manage the state and lifecycle of the game, ensuring a real-time gaming experience. The back-end, written in Node.js, handles player moves, game state, and user sessions, providing robust and efficient game management. I integrated a simple yet effective error handling mechanism to manage game exceptions and provide a smooth user experience.",
       "technologies": [
         "JavaScript (React)",
         "Node.js",
