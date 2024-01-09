@@ -54,9 +54,9 @@ export default function ContactForm() {
     }
 
     return(
-        <form className="flex flex-col justify-between gap-2 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm">
+        <form className="flex flex-col justify-between gap-2 2xl:text-2xl xl:text-xl lg:text-lg text-base">
             <div className="flex flex-row justify-between gap-4">
-                <label htmlFor="">Name</label>
+                <label className="2xl:text-2xl xl:text-xl lg:text-lg text-base" htmlFor="">Name</label>
                 <input
                     value={form.name}
                     required={true}
@@ -69,7 +69,7 @@ export default function ContactForm() {
             </div>
             <div className="py-2"></div>
             <div className="flex flex-row justify-between gap-4">
-                <label htmlFor="">Email</label>
+                <label className="2xl:text-2xl xl:text-xl lg:text-lg text-base" htmlFor="">Email</label>
                 <input
                     value={form.email}
                     required
@@ -82,7 +82,7 @@ export default function ContactForm() {
             </div>
             <div className="text-coral-pink text-sm py-0 text-right invisible" id="errorEmail">Please, enter valid email</div>
             <div className="flex flex-row justify-between gap-4">
-                <label htmlFor="text">Text</label>
+                <label className="2xl:text-2xl xl:text-xl lg:text-lg text-base" htmlFor="text">Text</label>
                 <textarea
                     value={form.text}
                     required={true}

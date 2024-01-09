@@ -40,20 +40,30 @@
         "Node.js",
         "Polling"
       ]
+    },
+    {
+      "id": 5,
+      "title": "Hacker News Website Interface",
+      "description": "Developed a dynamic interface for a Hacker News site, featuring an auto-refreshing news feed and an interactive news page. Implemented a real-time news list with sorting by date, clickable news items leading to detailed pages, automatic and manual refresh options, and a nested comment system. Ensured seamless user experience with intuitive navigation and responsive design.",
+      "technologies": [
+        "JavaScript (React)",
+        "Redux",
+        "Hacker News API"
+      ]
     }
   ],
   "messages": [
-    {
-      "id": 1,
-      "name": 1,
-      "email": "Fundraising Web-Application for American School",
-      "text": "In this project I played a key role in front-end and back-end development. Features implemented: weakly reports on donations, integration with PayPal API including recurring payments, several types of users functionality (principals, teachers, admins, bookkeepers, parents, students), scheduled emails within 6 timezones, cron jobs for weekly newsletters."
-    },
     {
       "name": "Maryna Savelyeva",
       "email": "persempre1@yandex.ru",
       "text": "jljkljkljl",
       "id": 2
+    },
+    {
+      "name": "проропоп",
+      "email": "persempre1@yandex.ru",
+      "text": "",
+      "id": 3
     }
   ]
 }

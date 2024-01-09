@@ -18,7 +18,7 @@ export default function DownloadButton () {
     }
 
     function downloadHandle() {
-        downloadFile('http://localhost:3000/marina-savelieva-cv.pdf', 'marina-savelieva-cv.pdf');
+        downloadFile('http://localhost:3000/maryna-savelyeva-cv-actual.pdf', 'marina-savelieva-cv.pdf');
     }
 
 
