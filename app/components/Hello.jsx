@@ -1,7 +1,7 @@
 export default function Hello() {
     return (
         <div className="flex flex-row justify-between flex-wrap h-full items-center">
-            <div className="w-100 md:w-3/6 h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base text-balance text-justify">
+            <div className="w-100 lg:w-3/6 h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base text-balance text-justify">
                 <p className="text-mint-green">
                     36 y.o. / Minsk / Remote, hybrid
                 </p>
@@ -19,7 +19,7 @@ export default function Hello() {
                     was graduated with a specialization &quot;Programmer&quot;.
                 </p>
             </div>
-            <div className="w-100 md:w-2/6 h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base">
+            <div className="w-100 lg:w-2/6 h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base">
                 <p className="text-mint-green">
                     Langugages:
                 </p>

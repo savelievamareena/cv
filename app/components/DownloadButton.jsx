@@ -23,7 +23,10 @@ export default function DownloadButton () {
 
 
     return(
-        <div className="absolute bg-amber-400 w-16 h-20 left-4 bottom-10 text-4xl flex items-center justify-center cursor-pointer" onClick={downloadHandle}>
+        <div className="absolute bg-amber-400 w-10 h-12 md:w-16 md:h-20 left-10 top-2 md:left-32 md:top-6 text-4xl flex items-center justify-center cursor-pointer"
+             onClick={downloadHandle}
+             title="Download CV"
+        >
             <AiOutlineFileText/>
         </div>
     )
