@@ -3,7 +3,7 @@ export default function Hello() {
         <div className="flex flex-row justify-between flex-wrap h-full items-center">
             <div className="w-100 lg:w-3/6 h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base text-balance text-justify">
                 <p className="text-mint-green">
-                    36 y.o. / Minsk / Remote, hybrid
+                    Minsk / Remote, hybrid
                 </p>
                 <p>
                     Hi, I am Marina, I am a web-developer with almost 3 years of
