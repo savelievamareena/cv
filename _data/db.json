@@ -2,68 +2,119 @@
   "projects": [
     {
       "id": 1,
+      "title": "Payroll & Financial Management System",
+      "period": "2026",
+      "description": "I built an information-dense front-end for an internal payroll and financial management platform (~100 internal users) on a legacy stack. I implemented data-heavy interfaces working with large datasets: complex tables, advanced filtering, pagination, and form-heavy, API-driven workflows. I also refactored key modules to improve maintainability and readability while carefully preserving the existing business logic.",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Redux",
+        "Material UI (MUI)",
+        "REST API"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Logistics & Document Management Tool",
+      "period": "2025",
+      "description": "I worked on a logistics platform used by around 30 corporate clients. I owned a large-scale technical-debt reduction initiative, resolving roughly 80% of known legacy issues and significantly improving system stability. I also designed and delivered document-management flows that support worldwide goods-delivery processes.",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "React Query",
+        "Zustand",
+        "Ant Design",
+        "Node.js",
+        "Prisma",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "MedTech Platform",
+      "period": "2024–2025",
+      "description": "Delivered front-end features for a high-traffic MedTech platform serving around 300,000 monthly users. I took ownership of a critical performance issue on a mobile page, diagnosed the root cause and resolved it end-to-end by introducing lazy loading, code splitting, and asset optimization, making the page stable across all devices. I led the implementation of responsive, accessible, pixel-perfect layouts (WCAG-compliant) and developed a PHP plugin to automate 3D model uploads to the database.",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "SASS",
+        "PHP",
+        "WordPress",
+        "WCAG / Accessibility"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Employees Management App",
+      "period": "2023–2024",
+      "description": "A full-featured web application for managing employee profiles, CVs, skills, and reference data. I implemented authentication (registration, login, email verification), professional profiles with skills and languages, CV management with printable previews, and administrative controls for departments, positions, skills, and languages. The app includes bulk operations, breadcrumb navigation, a notification system, light/dark theme switching, and full English/Russian internationalization, all backed by a GraphQL API with strongly-typed forms and validation.",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Apollo GraphQL",
+        "Ant Design",
+        "React Hook Form + Zod",
+        "i18next",
+        "Vite"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Personal CV Website",
+      "period": "2024",
+      "description": "Personal CV Website Developed with Next.js and Tailwind CSS: As a web developer, I crafted my own CV website utilizing Next.js (a React framework) and Tailwind CSS for a sleek and modern styling. Meticulous effort was invested to ensure a responsive layout that is compatible not only with various web browser dimensions, but also with different mobile device resolutions. I employed JSON Server (a Node module) as a swift and uncomplicated solution to create a quick REST web service. I set up a server for hosting my CV on Amazon AWS using Terraform for infrastructure automation.",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind",
+        "PostCSS",
+        "Cloudflare"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Hacker News Website Interface",
+      "period": "2023",
+      "description": "Developed a dynamic interface for a Hacker News site, featuring an auto-refreshing news feed and an interactive news page. Implemented a real-time news list with sorting by date, clickable news items leading to detailed pages, automatic and manual refresh options, and a nested comment system. Ensured seamless user experience with intuitive navigation and responsive design.",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Hacker News API"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Healthcare Patient Interaction and Scheduling Platform",
+      "period": "2022",
+      "description": "Engineered a robust Patient Interaction Platform tailored for a medical clinic. Features implemented: functionality for three types of users (guest, admin and patient), reviews, callback requests, possibility to make an appointment and to delete it for patients, personal cabinet for admins with the access to reviews moderation, an algorithm that calculates the proper time slots of the appointments to be displayed on the patient's page.",
+      "technologies": [
+        "Java (SpringBoot, Hibernate)",
+        "JavaScript",
+        "React",
+        "Redux",
+        "MySQL",
+        "Webpack"
+      ]
+    },
+    {
+      "id": 8,
       "title": "Fundraising Web-Application for Schools",
-      "description": "In this project I played a key role in front-end and back-end development. Features implemented: weakly reports on donations, integration with PayPal API including recurring payments, several types of users functionality (principals, teachers, admins, bookkeepers, parents, students), scheduled emails within 6 timezones, cron jobs for weekly newsletters.",
+      "period": "2019–2020",
+      "description": "In this project I played a key role in front-end and back-end development. Features implemented: weekly reports on donations, integration with PayPal API including recurring payments, several types of users functionality (principals, teachers, admins, bookkeepers, parents, students), scheduled emails within 6 timezones, cron jobs for weekly newsletters.",
       "technologies": [
         "PHP 5 (Yii)",
         "JavaScript (jQuery)",
         "PayPal API",
         "MySQL"
       ]
-    },
-    {
-      "id": 2,
-      "title": "Healthcare Patient Interaction and Scheduling Platform",
-      "description": "Engineered a robust Patient Interaction Platform tailored for a medical clinic. Features implemented: functionality for three types of users (quest, admin and patient), reviews, callback requests, possibility to make an appointment and to delete it for patients, personal cabinet for admins with the access to reviews moderation, an algorithm that calculates the proper time slots of the appointments to be displayed on the patient's page.",
-      "technologies": [
-        "Java (SpringBoot, Hibernate)",
-        "JavaScript (React)",
-        "MySQL"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Personal CV Website",
-      "description": "Personal CV Website Developed with Next.js and Tailwind CSS: As a web developer, I crafted my own CV website utilizing Next.js (a React framework) and Tailwind CSS for a sleek and modern styling. Meticulous effort was invested to ensure a responsive layout that is compatible not only with various web browser dimensions, but also with different mobile device resolutions. I employed JSON Server (a Node module) as a swift and uncomplicated solution to create a quick REST web service. I set up a server for hosting my CV on Amazon AWS using Terraform for infrastructure automation.",
-      "technologies": [
-        "JavaScript (React, Next.js)",
-        "Tailwind",
-        "Terraform"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Real-Time Multiplayer Tic-Tac-Toe Game",
-      "description": "Implemented a real-time multiplayer Tic-Tac-Toe game enabling two players to interact and play the game seamlessly on the web. Utilized React.js for building a user-friendly and responsive front-end interface. Incorporated the use of React hooks to manage the state and lifecycle of the game, ensuring a real-time gaming experience. The back-end, written in Node.js, handles player moves, game state, and user sessions, providing robust and efficient game management. I integrated a simple yet effective error handling mechanism to manage game exceptions and provide a smooth user experience.",
-      "technologies": [
-        "JavaScript (React)",
-        "Node.js",
-        "Polling"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Hacker News Website Interface",
-      "description": "Developed a dynamic interface for a Hacker News site, featuring an auto-refreshing news feed and an interactive news page. Implemented a real-time news list with sorting by date, clickable news items leading to detailed pages, automatic and manual refresh options, and a nested comment system. Ensured seamless user experience with intuitive navigation and responsive design.",
-      "technologies": [
-        "JavaScript (React)",
-        "Redux",
-        "Hacker News API"
-      ]
     }
   ],
-  "messages": [
-    {
-      "name": "Maryna Savelyeva",
-      "email": "persempre1@yandex.ru",
-      "text": "jljkljkljl",
-      "id": 2
-    },
-    {
-      "name": "проропоп",
-      "email": "persempre1@yandex.ru",
-      "text": "",
-      "id": 3
-    }
-  ]
+  "messages": []
 }

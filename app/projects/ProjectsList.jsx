@@ -1,36 +1,16 @@
 'use client'
 import React from "react";
 import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
+import db from "@/_data/db.json";
+
+const projects = db.projects;
 
 export default function ProjectsList() {
-    const [pData, setPData] = React.useState([]);
-    const [loading, setLoading] = React.useState(true);
     const [activeProjectIndex, setActiveProjectIndex] = React.useState(0);
-    const [activeProject, setActiveProject] = React.useState({});
-
-    React.useEffect(()=> {
-        fetch('http://localhost:4000/projects')
-            .then((res) => res.json())
-            .then((data) => {
-                setPData([...data]);
-                setLoading(false);
-            }).catch(error => {
-                console.log(error)
-            })
-    }, []);
-
-    React.useEffect(()=> {
-        if(pData.length > 0) {
-            setActiveProject({...pData[activeProjectIndex]});
-        }
-    }, [pData]);
-
-    React.useEffect(()=> {
-        setActiveProject({...pData[activeProjectIndex]});
-    }, [activeProjectIndex]);
+    const activeProject = projects[activeProjectIndex];
 
     function projectsFlipNext() {
-        if(activeProjectIndex === pData.length - 1) {
+        if(activeProjectIndex === projects.length - 1) {
             setActiveProjectIndex(0);
         }else {
             setActiveProjectIndex(activeProjectIndex + 1);
@@ -39,19 +19,21 @@ export default function ProjectsList() {
 
     function projectsFlipPrev() {
         if(activeProjectIndex === 0) {
-            setActiveProjectIndex(pData.length - 1);
+            setActiveProjectIndex(projects.length - 1);
         }else {
             setActiveProjectIndex(activeProjectIndex - 1);
         }
     }
 
-    if (loading) return <p>Loading...</p>
-    if (!pData) return <p>No profile data</p>
+    if (!projects.length) return <p>No profile data</p>
 
     return(
         <div className="flex flex-col justify-between flex-1">
             <div key={activeProject.id} className="flex justify-evenly flex-row">
-                <div className="responsive-pr-column1">{activeProject.title}</div>
+                <div className="responsive-pr-column1">
+                    <div>{activeProject.title}</div>
+                    {activeProject.period && <div className="text-sm opacity-60 mt-1">{activeProject.period}</div>}
+                </div>
                 <div className="responsive-pr-column2">{activeProject.description}</div>
                 <div className="responsive-pr-column3">
                     {activeProject.technologies?.map((technology, i) => {
