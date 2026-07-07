@@ -1,12 +1,12 @@
 'use client'
-import React from "react";
+import {useState} from "react";
 import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
 import db from "@/_data/db.json";
 
 const projects = db.projects;
 
 export default function ProjectsList() {
-    const [activeProjectIndex, setActiveProjectIndex] = React.useState(0);
+    const [activeProjectIndex, setActiveProjectIndex] = useState(0);
     const activeProject = projects[activeProjectIndex];
 
     function projectsFlipNext() {

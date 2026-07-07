@@ -17,8 +17,9 @@ function getProject(id) {
     return project;
 }
 
-export default function ProjectDetails({params}) {
-    let project = getProject(params.id);
+export default async function ProjectDetails({params}) {
+    let {id} = await params;
+    let project = getProject(id);
     return(
         <div>
             {project.title}

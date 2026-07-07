@@ -18,7 +18,9 @@ export default function RootLayout({children}) {
                 <div className="bg-gray-800 items-center flex flex-col rounded-t-3xl p-5 md:p-10 flex-1">
                     <h1>Marina Savelieva CV</h1>
                     <Navigation/>
-                    {children}
+                    <div className="w-full md:w-11/12 lg:w-4/5 xl:w-3/4 flex flex-col flex-1">
+                        {children}
+                    </div>
                 </div>
             </div>
             <DownloadButton/>

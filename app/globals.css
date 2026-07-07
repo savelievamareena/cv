@@ -32,21 +32,22 @@ label {
   @apply
   2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg text-xs
   2xl:w-64 xl:w-56 lg:w-48 md:w-40 w-16
-  shrink-0
+  shrink-0 pr-2
   text-mint-green
+  border-r-2 border-mint-green
 }
 
 .responsive-pr-column2 {
   @apply
   2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs
-  px-2 md:px-2.5
+  px-4 md:px-2.5
   shrink text-justify
 }
 
 .responsive-pr-column3 {
   @apply
   2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs
-  2xl:w-64 xl:w-56 lg:w-48 md:w-32 w-16
+  2xl:w-60 xl:w-52 lg:w-44 md:w-32 w-16
   shrink-0 text-right
 }
 
