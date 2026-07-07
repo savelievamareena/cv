@@ -20,7 +20,7 @@ export default function Links() {
     })
 
     return(
-        <div>
+        <div className="w-full">
             {linksComponents}
         </div>
     )
