@@ -29,7 +29,7 @@ export default function ProjectsList() {
 
     return(
         <div className="flex flex-col justify-between flex-1">
-            <div key={activeProject.id} className="flex justify-evenly flex-row">
+            <div key={activeProject.id} className="flex flex-col gap-3 md:gap-0 md:flex-row md:justify-evenly">
                 <div className="responsive-pr-column1">
                     <div>{activeProject.title}</div>
                     {activeProject.period && <div className="text-sm opacity-60 mt-1">{activeProject.period}</div>}

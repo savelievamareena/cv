@@ -1,9 +1,9 @@
 export default function Hello() {
     return (
-        <div className="flex flex-row flex-wrap h-full items-center gap-20">
-            <div className="flex-1 min-w-0 h-full 2xl:text-xl xl:text-lg lg:text-base text-sm text-balance text-justify">
+        <div className="flex flex-col md:flex-row md:flex-wrap h-full md:items-center gap-8 md:gap-20">
+            <div className="md:flex-1 min-w-0 md:h-full 2xl:text-xl xl:text-lg lg:text-base text-sm text-balance text-justify">
                 <p className="text-mint-green">
-                    Minsk / Remote, hybrid
+                    Minsk / Remote, hybrid, onsite
                 </p>
                 <p>
                     Hi, I am Marina, I am a software engineer with around 5 years of
@@ -23,7 +23,7 @@ export default function Hello() {
                     and international teams. Mentors junior developers and shares knowledge across the team.
                 </p>
             </div>
-            <div className="h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base">
+            <div className="md:h-full 2xl:text-2xl xl:text-xl lg:text-lg text-base">
                 <p className="text-mint-green">
                     Languages:
                 </p>
