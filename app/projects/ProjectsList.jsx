@@ -36,11 +36,9 @@ export default function ProjectsList() {
                 </div>
                 <div className="responsive-pr-column2">{activeProject.description}</div>
                 <div className="responsive-pr-column3">
-                    {activeProject.technologies?.map((technology, i) => {
-                        return(
-                            <div key={i}>{technology}</div>
-                        )
-                    })}
+                    {activeProject.technologies?.map((technology) => (
+                        <div key={technology}>{technology}</div>
+                    ))}
                 </div>
             </div>
             <div className="flex flex-row space-x-10 text-4xl place-content-center mt-10">

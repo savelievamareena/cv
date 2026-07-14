@@ -4,31 +4,27 @@ import "../globals.css";
 import {usePathname} from "next/navigation"
 
 export default function Navigation() {
-    let pathName = usePathname();
-    let paths = [
-        ["/", "About"],
-        ["/projects", "Projects"],
-        ["/skills", "Skills"],
-        ["/links", "Links"],
-        ["/contact", "Contact Me"],
-    ]
-
-    let links = paths.map((linkPath, i) => {
-        return(
-            <div key={i}>
-                <Link
-                    href={linkPath[0]}
-                    className={`text-coral-pink ${pathName === paths[i][0] && "active"} 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm`}
-                >
-                    {linkPath[1]}
-                </Link>
-            </div>
-        )
-    })
+    const pathName = usePathname();
+    const paths = [
+        { href: "/", label: "About" },
+        { href: "/projects", label: "Projects" },
+        { href: "/skills", label: "Skills" },
+        { href: "/links", label: "Links" },
+        { href: "/contact", label: "Contact Me" },
+    ];
 
     return(
         <nav className="min-w-full flex flex-row justify-evenly border-b-2 border-coral-pink py-2 mb-10">
-            {links}
+            {paths.map(({ href, label }) => (
+                <div key={href}>
+                    <Link
+                        href={href}
+                        className={`text-coral-pink ${pathName === href && "active"} 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-sm`}
+                    >
+                        {label}
+                    </Link>
+                </div>
+            ))}
         </nav>
     )
 }
