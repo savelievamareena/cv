@@ -2,26 +2,22 @@ import Link from "next/link";
 
 export default function Links() {
     const links = [
-        ["LinkedIn", "https://www.linkedin.com/in/maryna-savelyeva-720b39113/"],
-        ["LeetCode", "https://leetcode.com/u/optovoloknope/"],
-        ["GitHub", "https://github.com/savelievamareena"]
-    ]
+        { label: "LinkedIn", url: "https://www.linkedin.com/in/maryna-savelyeva-720b39113/" },
+        { label: "LeetCode", url: "https://leetcode.com/u/optovoloknope/" },
+        { label: "GitHub", url: "https://github.com/savelievamareena" },
+    ];
 
-    let linksComponents = links.map((link, i) => {
-        return(
-            <div key={i} className="pb-5">
-                <Link
-                    href={link[1]} target="_blank"
-                    className="text-mint-green">
-                    {link[0]}
-                </Link>
-            </div>
-        )
-    })
-
-    return(
-        <div className="w-full">
-            {linksComponents}
+    return (
+        <div className="w-full flex flex-col items-center flex-1">
+            {links.map(({ label, url }) => (
+                <div key={label} className="pb-5">
+                    <Link
+                        href={url} target="_blank"
+                        className="text-mint-green">
+                        {label}
+                    </Link>
+                </div>
+            ))}
         </div>
-    )
+    );
 }

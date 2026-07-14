@@ -1,6 +1,5 @@
 export default function SkillsList() {
     const skillsLevels = ["Beginner", "Familiar", "Proficient", "Expert"];
-    // level index: 0 Beginner, 1 Familiar, 2 Proficient, 3 Expert
     const skillGroups = [
         {
             title: "Core frontend",
@@ -55,7 +54,7 @@ export default function SkillsList() {
 
     return(
         <div className="flex flex-col 2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs">
-            <div className="flex">
+            <div className="flex sticky top-0 z-10 bg-gray-800 py-3">
                 <div className="2xl:w-36 xl:w-32 lg:w-28 md:w-24 w-20 flex-shrink-0 p-2"></div>
                 {skillsLevels.map((level, index) => (
                     <div key={index} className="flex-1 pr-1 text-center">{level}</div>
